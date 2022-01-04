@@ -1,0 +1,53 @@
+<div class="container-fluid">
+<div class="card" style="background-color: lightblue;">
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card" style="margin-top: 5px; margin-left: 5px; margin-bottom: 5px; margin-right: 1px; background-color: lightcyan; ">
+        <div class="card-body" >
+          <h5 class="card-title">Bill</h5>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">$</span>
+          <input
+            type="number"
+            id="price"
+            class="form-control">
+          </div>
+        </div>
+            <br>
+          <p class="card-text">Select Tip %</p>
+          <div class="container">
+            <div class="row row-cols-3">
+              <div class="col"><button type="button" class="btn btn-info sm"(click)="chooseTip(.05)">5%</button></div>
+              <div class="col"><button type="button" class="btn btn-info sm"(click)="chooseTip(.10)">10%</button></div>
+              <div class="col"><button type="button" class="btn btn-info sm"(click)="chooseTip(.15)">15%</button></div>
+              <div class="col"><button type="button" class="btn btn-info sm"(click)="chooseTip(.20)">20%</button></div>
+              <div class="col"><button type="button" class="btn btn-info sm"(click)="chooseTip(.25)">25%</button></div>
+              <div class="col"><button type="button" class="btn btn-info sm"(click)="chooseTip(.30)">30%</button></div>
+            </div>
+          </div>
+          <br>
+          <label>Number of people</label>
+          <div class="form-group"></div>
+          <input
+            type="number"
+            id="people"
+            class="form-control">
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card" style="margin-top: 5px; margin-left: 1px; margin-bottom: 5px; margin-right: 5px; background-color: lightseagreen;">
+        <div class="card-body">
+          <h5 class="card-title">Amount Totals: </h5>
+          <h6 class="card-text">Total Tip: {{ tip }}</h6>
+          <h6 class="card-text">Bill Total with Tip: {{ newTotal }}</h6>
+          <h6 class="card-text">Tip Amount per Person: {{ tipPer }}</h6>
+          <h6 class="card-text">Total Amount per Person: {{ totalPer }}</h6>
+          <a href="#" class="btn btn-secondary">Reset</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
